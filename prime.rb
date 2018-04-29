@@ -9,6 +9,7 @@ def prime?(n)
         else
           true
         end
+      end
   elsif n == 2
     true
   else
