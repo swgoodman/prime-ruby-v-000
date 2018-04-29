@@ -1,7 +1,7 @@
 require 'pry'
 
 def prime?(n)
-  #esult = false
+  result = false
   if n > 2
     range = (2..n).to_a
       range.each do |num|
