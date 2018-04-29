@@ -1,22 +1,24 @@
 require 'pry'
 
 def prime?(n)
+  result = false
+
   if n > 2
     range = (2..n).to_a
-    is_true = true
-    is_false = false
       range.each do |num|
         if n % num == 0
-          is_false
+          result = false
         else
-          is_true
+          result = true
         end
       end
-  elsif n == 2 || n == 1
-    true
+  elsif n == 2
+    result = true
   else
-    false
+    result = false
   end
+
+  result
 end
 
 #  else
