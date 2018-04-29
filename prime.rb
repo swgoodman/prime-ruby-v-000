@@ -3,7 +3,7 @@ require 'pry'
 def prime?(n)
   result = false
   if n > 2
-    range = (2..n).to_a
+    range = (2..n-1).to_a
       range.each do |num|
         if n % num == 0
           result = false
