@@ -1,23 +1,46 @@
-# Add  code here!
-
 require 'pry'
-
-# def prime?(integer)
-  # while integer <
-# end
 
 def prime?(n)
   if n > 2
-    range = (2..n-1).to_a
-      range.any? { |number| number % range.any? == 0 }
-    elsif n <= 2 && n > 0
-      range = (0..n).to_a
-    else n < 0
-      range = (n..0).to_a
+    range = (2..n).to_a
+      range.each do |num|
+        if n % num == 0
+          false
+        else
+          true
+        end
+  elsif n == 2
+    true
+  else
+    false
   end
 end
-#binding.pry
-    #if n % i == 0
-      #false
-    #end
+
+  else
+    false
+    counter = 2
+    range = (2..n).to_a
+      range.each do |num|
+      if num % counter == 0 && num != counter
+        false
+      else
+        counter += 1
+        true
+      end
+  end
+end
+
+
+#  if n > 2
+  #  range = (2..n).to_a
+  #  counter = 2
+  #  n.times do |i|
+    #  range.each do |number|
+    #    if number % counter == 0 && number != counter
+    #    end
+  #    end
+    #  counter += 1
+  #  end
+#    range
   #end
+#
