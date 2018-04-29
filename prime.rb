@@ -16,19 +16,19 @@ def prime?(n)
   end
 end
 
-  else
-    false
-    counter = 2
-    range = (2..n).to_a
-      range.each do |num|
-      if num % counter == 0 && num != counter
-        false
-      else
-        counter += 1
-        true
-      end
-  end
-end
+#  else
+#    false
+#    counter = 2
+#    range = (2..n).to_a
+#      range.each do |num|
+#      if num % counter == 0 && num != counter
+#        false
+#      else
+#        counter += 1
+#        true
+#      end
+#  end
+#nd
 
 
 #  if n > 2
