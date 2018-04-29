@@ -10,7 +10,7 @@ def prime?(n)
           true
         end
       end
-  elsif n == 2
+  elsif n == 2 || n == 1
     true
   else
     false
