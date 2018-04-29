@@ -2,14 +2,14 @@ require 'pry'
 
 def prime?(n)
   if n <= 1
-    false
+    return false
   end
   lowest = 2
   while lowest < n
     if n % lowest == 0
-      false
+      return false
     end
     n += 1
   end
-  true
+  return true
 end
