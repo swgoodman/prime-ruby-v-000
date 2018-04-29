@@ -6,7 +6,7 @@ def prime?(n)
   if n > 2
     range = (2..n).to_a
       range.each do |num|
-        if n % num == 0 && n != 3
+        if n % num == 0
           result = false
         else
           result = true
