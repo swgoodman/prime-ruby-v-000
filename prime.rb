@@ -4,8 +4,14 @@ def prime?(n)
   result = false
   if n <= 1
     false
-  if n > 2
-    range = (2..n-1).to_a
+  end
+  lowest = 2
+  while lowest < n
+    if n % lowest == 0
+      false
+    end
+    n += 1
+  end
 
 
 
