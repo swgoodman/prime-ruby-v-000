@@ -10,7 +10,7 @@ def prime?(n)
       return false
     end
     lowest = lowest + 1
-    binding.pry
+    #binding.pry
   end
   return true
 end
