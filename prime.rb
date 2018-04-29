@@ -10,6 +10,7 @@ def prime?(n)
       return false
     end
     n = n + 1
+    binding.pry
   end
   return true
 end
