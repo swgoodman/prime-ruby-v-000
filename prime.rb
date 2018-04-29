@@ -9,7 +9,7 @@ def prime?(n)
     if n % lowest == 0
       return false
     end
-    n = n + 1
+    lowest = lowest + 1
     binding.pry
   end
   return true
